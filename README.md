@@ -6,7 +6,7 @@
     <a><img src="images/neu.png"  height="70px" ></a>
 </div>
 
- [arXiv](https://arxiv.org/abs/2301.12048) | [Paper](https://dl.acm.org/doi/pdf/10.1145/3511808.3557697) | Primary contact: [Yizhou Wang](mailto:wyzjack990122@gmail.com)
+ [arXiv](https://arxiv.org/abs/2301.12048) | [Paper](https://ieeexplore.ieee.org/stamp/stamp.jsp?tp=&arnumber=10027694) | Primary contact: [Yizhou Wang](mailto:wyzjack990122@gmail.com)
 
 <div align="center">
   <img src="images/framework.png" width="950px" height="250px">
@@ -22,7 +22,7 @@ Anomaly detection in videos is a significant yet challenging problem. Previous a
 
 ### Prepare data
 
-Follow the intructions in [VEC repo](https://github.com/yuguangnudt/VEC_VAD) to download and organize Avenue and ShanghaiTech datasets.
+Follow the intructions in [code of VEC](https://github.com/yuguangnudt/VEC_VAD) to download and organize Avenue and ShanghaiTech datasets.
 
 ### Environment setup
 
@@ -85,4 +85,22 @@ python test.py -d ShanghaiTech -l 3 -n_l 5 -e 20 -w_r 1 -w_o 1 -ep 0.005
 
 ```
 
+## Acknowledgments
+In this code we heavily rely on the [code of VEC](https://github.com/yuguangnudt/VEC_VAD). In the STATE architecture part code we heavily rely on the code of [ConvTransfomer](https://arxiv.org/pdf/2011.10185.pdf) kindly provided by [Zhouyong Liu](https://dblp.org/pid/166/4117.html) via email. The README file format is heavily based on the GitHub repos of my senior colleague [Huan Wang](https://github.com/MingSun-Tse) and [Xu Ma](https://github.com/ma-xu). Great thanks to them! We also greatly thank the anounymous ICDM'22 reviewers for the constructive comments to help us improve the paper. 
 
+
+## BibTeX
+
+```BibTeX
+@INPROCEEDINGS{10027694,
+  author={Wang, Yizhou and Qin, Can and Bai, Yue and Xu, Yi and Ma, Xu and Fu, Yun},
+  booktitle={2022 IEEE International Conference on Data Mining (ICDM)}, 
+  title={Making Reconstruction-based Method Great Again for Video Anomaly Detection}, 
+  year={2022},
+  volume={},
+  number={},
+  pages={1215-1220},
+  doi={10.1109/ICDM54844.2022.00157}
+}
+
+```
