@@ -3,7 +3,7 @@
 *.so
 *.pyc
 __pycache__/
-*.png
+# *.png
 *.h5
 *.npz
 *.csv
