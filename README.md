@@ -92,15 +92,13 @@ In this code we heavily rely on the [code of VEC](https://github.com/yuguangnudt
 ## BibTeX
 
 ```BibTeX
-@INPROCEEDINGS{10027694,
+@inproceedings{wang2022making,
+  title={Making Reconstruction-based Method Great Again for Video Anomaly Detection},
   author={Wang, Yizhou and Qin, Can and Bai, Yue and Xu, Yi and Ma, Xu and Fu, Yun},
-  booktitle={2022 IEEE International Conference on Data Mining (ICDM)}, 
-  title={Making Reconstruction-based Method Great Again for Video Anomaly Detection}, 
+  booktitle={2022 IEEE International Conference on Data Mining (ICDM)},
+  pages={1215--1220},
   year={2022},
-  volume={},
-  number={},
-  pages={1215-1220},
-  doi={10.1109/ICDM54844.2022.00157}
+  organization={IEEE}
 }
 
 ```
