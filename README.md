@@ -22,7 +22,7 @@ Anomaly detection in videos is a significant yet challenging problem. Previous a
 
 ### Prepare data
 
-Follow the intructions in [code of VEC](https://github.com/yuguangnudt/VEC_VAD) to download and organize Avenue and ShanghaiTech datasets.
+Follow the instructions in [code of VEC](https://github.com/yuguangnudt/VEC_VAD) to download and organize Avenue and ShanghaiTech datasets.
 
 ### Environment setup
 
@@ -51,16 +51,16 @@ conda env create -f vad.yaml
 
 (2) Run `calc_img_inputs.py` (in PyTorch 0.3.0): `python calc_img_inputs.py`. This will generate a new folder named `optical_flow` containing the optical flow of the different datasets. The `optical_flow` folder has basically the same directory structure as the raw_datasets folder.
 
-#### 2.  Get pretrained object detector to generate bounding boxes
+#### 2. Get pretrained object detector to generate bounding boxes
 
 Follow the [instructions](https://github.com/open-mmlab/mmdetection/tree/v1.0rc0) to install mmdet (might use `git clone -b v1.0rc0 https://github.com/open-mmlab/mmdetection.git` to clone old version of mmdetection). Then download the pretrained object detector [Cascade R-CNN](https://s3.ap-northeast-2.amazonaws.com/open-mmlab/mmdetection/models/cascade_rcnn_r101_fpn_1x_20181129-d64ebac7.pth), and move it to `fore_det/obj_det_checkpoints` (create a folder named obj_det_checkpoints).
 
 
-#### 3.  Reproduce the results
-The model checkpoints and some saved training statistcs to use are provided in this [Dropbox Link](https://www.dropbox.com/sh/u96kxqy8w6zx22p/AABWqupd5uE8rHEQKwom-7tCa?dl=0)
+#### 3. Reproduce the results
+The model checkpoints and some saved training statistics to use are provided in this [Dropbox Link](https://www.dropbox.com/sh/u96kxqy8w6zx22p/AABWqupd5uE8rHEQKwom-7tCa?dl=0)
 
-#### Avnue
-To train , run the following command
+#### Avenue
+To train, run the following command
 
 ```bash
 python train.py -d avenue -l 3 -n_l 3 -e 20
@@ -73,7 +73,7 @@ python test.py -d avenue -l 3 -n_l 3 -e 20 -w_r 0.3 -w_o 1 -ep 0.002
 ```
 
 #### ShanghaiTech
-To train , run the following command
+To train, run the following command
 
 ```bash
 python train.py -d ShanghaiTech -l 3 -n_l 5 -e 20
@@ -86,7 +86,7 @@ python test.py -d ShanghaiTech -l 3 -n_l 5 -e 20 -w_r 1 -w_o 1 -ep 0.005
 ```
 
 ## Acknowledgments
-In this code we heavily rely on the [code of VEC](https://github.com/yuguangnudt/VEC_VAD). In the STATE architecture part code we heavily rely on the code of [ConvTransfomer](https://arxiv.org/pdf/2011.10185.pdf) kindly provided by [Zhouyong Liu](https://dblp.org/pid/166/4117.html) via email. The README file format is heavily based on the GitHub repos of my senior colleague [Huan Wang](https://github.com/MingSun-Tse) and [Xu Ma](https://github.com/ma-xu). Great thanks to them! We also greatly thank the anounymous ICDM'22 reviewers for the constructive comments to help us improve the paper. 
+In this code we heavily rely on the [code of VEC](https://github.com/yuguangnudt/VEC_VAD). In the STATE architecture part code we heavily rely on the code of [ConvTransformer](https://arxiv.org/pdf/2011.10185.pdf) kindly provided by [Zhouyong Liu](https://dblp.org/pid/166/4117.html) via email. The README file format is heavily based on the GitHub repos of my senior colleague [Huan Wang](https://github.com/MingSun-Tse) and [Xu Ma](https://github.com/ma-xu). Great thanks to them! We also greatly thank the anonymous ICDM'22 reviewers for the constructive comments to help us improve the paper. 
 
 
 ## BibTeX
