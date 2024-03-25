@@ -53,7 +53,7 @@ conda env create -f vad.yaml
 
 #### 2.  Get pretrained object detector to generate bounding boxes
 
-Follow the [instructions](https://github.com/open-mmlab/mmdetection/tree/v1.0rc0) to install mmdet (might use `git clone -b v1.0rc0 https://github.com/open-mmlab/mmdetection.git` to clone old version of mmdetection). Then download the pretrained object detector [Cascade R-CNN](https://s3.ap-northeast-2.amazonaws.com/open-mmlab/mmdetection/models/cascade_rcnn_r101_fpn_1x_20181129-d64ebac7.pth), and move it to `fore_det/obj_det_checkpoints` (create a folder named obj_det_checkpoints).
+Follow the [instructions](https://github.com/open-mmlab/mmdetection/tree/v1.0rc0) to install mmdet (might use `git clone -b v1.0rc0 https://github.com/open-mmlab/mmdetection.git` to clone old version of mmdetection). Then download the pretrained object detector [Cascade R-CNN](https://www.dropbox.com/scl/fi/f8fs2ypgivqw8odwvjo4a/cascade_rcnn_r101_fpn_1x_20181129-d64ebac7.pth?rlkey=nn99t8r0sddd9zkzcv337ar7t&dl=0), and move it to `fore_det/obj_det_checkpoints` (create a folder named obj_det_checkpoints).
 
 
 #### 3.  Reproduce the results
